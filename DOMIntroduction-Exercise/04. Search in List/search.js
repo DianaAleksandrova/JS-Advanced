@@ -7,11 +7,11 @@ function search() {
 
       if(text.includes(searchText)){
          town.style.textDecoration = "underline";
-         town.style.frontWeight = "bold";
+         town.style.fontWeight = "bold";
          matches++;
       }else{
          town.style.textDecoration = "none";
-         town.style.frontWeight = "";
+         town.style.fontWeight = "";
       }
    }
    document.getElementById("result").innerText = `${matches} matches found`;
