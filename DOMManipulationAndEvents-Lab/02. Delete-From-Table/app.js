@@ -1,6 +1,6 @@
 function deleteByEmail() {
     let email = document.getElementsByName('email')[0].value;
-    let rows = document.querySelectorAll('#customers td:nth-child(2');
+    let rows = document.querySelectorAll('#customers td:nth-child(2)');
 
     let isFound = false;
 
@@ -12,6 +12,5 @@ function deleteByEmail() {
     }
     let result = document.getElementById('result');
 
-    result.textContent = isFound ? "Deleted." : "Not found.";
-    email.textContent = '';
+    result.textContent = isFound ? 'Deleted.' : 'Not found.';
 }
