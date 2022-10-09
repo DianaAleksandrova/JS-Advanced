@@ -26,10 +26,10 @@ function attachEventsListeners() {
     function calculate(value) {
         let inputs = Array.from(document.querySelectorAll('input[type=text]'));
         inputs.shift().value = value;
-        let minutes = value * 24;
+        let currentValue = value * 24;
         for (let input of inputs) {
-            input.value = minutes;
-            minutes *= 60;
+            input.value = currentValue;
+            currentValue *= 60;
         }
     }
 }
