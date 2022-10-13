@@ -8,7 +8,7 @@ function fibonacci() {
         next = result;
 
         return current;
-    }
+    };
 }
 
 let fib = fibonacci();
